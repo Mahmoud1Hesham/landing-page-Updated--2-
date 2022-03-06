@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list" class="menu__link">
+        </ul>
+
+    </nav>
+  </header>
+  <main>
+      <header class="main__hero">
+          <h1>Landing Page </h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Section 1" class="your-active-class">
+          <div class="landing__container">
+              <h2>Section 1</h2>
+              <p>
+                  Apple pie powder donut sesame snaps ice cream donut lollipop marzipan lollipop. Carrot cake caramels lemon drops tootsie roll carrot cake cake pastry pudding. Jelly tart chocolate bar cupcake chupa chups croissant. Cupcake carrot cake apple pie I love toffee apple pie jelly-o cotton candy cookie. Bear claw liquorice cotton candy cotton candy cookie. I love toffee pudding tootsie roll biscuit.
+                  Tiramisu pastry bear claw muffin liquorice sesame snaps marshmallow sweet. Dessert chocolate cake I love powder pie I love ice cream apple pie. Marshmallow sugar plum chocolate bar gingerbread I love wafer shortbread jelly-o. Muffin tiramisu halvah jelly beans cupcake sweet chocolate cake. Caramels sugar plum tiramisu tiramisu tart tart dessert apple pie. Biscuit pie cheesecake liquorice jujubes. Tart I love halvah croissant carrot cake. Topping sugar plum dragée I love cookie cotton candy sweet lemon drops.
+              </p>
+
+              <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+          <div class="landing__container">
+              <h2>Section 2</h2>
+              <p>
+                  Apple pie powder donut sesame snaps ice cream donut lollipop marzipan lollipop. Carrot cake caramels lemon drops tootsie roll carrot cake cake pastry pudding. Jelly tart chocolate bar cupcake chupa chups croissant. Cupcake carrot cake apple pie I love toffee apple pie jelly-o cotton candy cookie. Bear claw liquorice cotton candy cotton candy cookie. I love toffee pudding tootsie roll biscuit.
+                  Tiramisu pastry bear claw muffin liquorice sesame snaps marshmallow sweet. Dessert chocolate cake I love powder pie I love ice cream apple pie. Marshmallow sugar plum chocolate bar gingerbread I love wafer shortbread jelly-o. Muffin tiramisu halvah jelly beans cupcake sweet chocolate cake. Caramels sugar plum tiramisu tiramisu tart tart dessert apple pie. Biscuit pie cheesecake liquorice jujubes. Tart I love halvah croissant carrot cake. Topping sugar plum dragée I love cookie cotton candy sweet lemon drops.
+              </p>
+
+              <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+          <div class="landing__container">
+              <h2>Section 3</h2>
+              <p>
+                  Apple pie powder donut sesame snaps ice cream donut lollipop marzipan lollipop. Carrot cake caramels lemon drops tootsie roll carrot cake cake pastry pudding. Jelly tart chocolate bar cupcake chupa chups croissant. Cupcake carrot cake apple pie I love toffee apple pie jelly-o cotton candy cookie. Bear claw liquorice cotton candy cotton candy cookie. I love toffee pudding tootsie roll biscuit.
+                  Tiramisu pastry bear claw muffin liquorice sesame snaps marshmallow sweet. Dessert chocolate cake I love powder pie I love ice cream apple pie. Marshmallow sugar plum chocolate bar gingerbread I love wafer shortbread jelly-o. Muffin tiramisu halvah jelly beans cupcake sweet chocolate cake. Caramels sugar plum tiramisu tiramisu tart tart dessert apple pie. Biscuit pie cheesecake liquorice jujubes. Tart I love halvah croissant carrot cake. Topping sugar plum dragée I love cookie cotton candy sweet lemon drops.
+              </p>
+
+              <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+          <div class="landing__container">
+              <h2>Section 4</h2>
+              <p>
+                  Apple pie powder donut sesame snaps ice cream donut lollipop marzipan lollipop. Carrot cake caramels lemon drops tootsie roll carrot cake cake pastry pudding. Jelly tart chocolate bar cupcake chupa chups croissant. Cupcake carrot cake apple pie I love toffee apple pie jelly-o cotton candy cookie. Bear claw liquorice cotton candy cotton candy cookie. I love toffee pudding tootsie roll biscuit.
+                  Tiramisu pastry bear claw muffin liquorice sesame snaps marshmallow sweet. Dessert chocolate cake I love powder pie I love ice cream apple pie. Marshmallow sugar plum chocolate bar gingerbread I love wafer shortbread jelly-o. Muffin tiramisu halvah jelly beans cupcake sweet chocolate cake. Caramels sugar plum tiramisu tiramisu tart tart dessert apple pie. Biscuit pie cheesecake liquorice jujubes. Tart I love halvah croissant carrot cake. Topping sugar plum dragée I love cookie cotton candy sweet lemon drops.
+              </p>
+
+              <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          </div>
+      </section>
+      <button onclick="goToTopFunction()" id="topBtn" title="Go to top">Top</button>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
